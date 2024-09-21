@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import { Modal } from '../components/Modal'
 import TokenSelect from './TokenSelect'
 import { UserButton } from './UserButton'
+import { useAuth } from '../hooks/useAuth'
 
 const Bonus = styled.button`
   all: unset;

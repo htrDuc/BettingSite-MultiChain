@@ -13,7 +13,7 @@ Our platform is an online betting site that offers a variety of games, including
 
 ## Environment
 
-- If you meet any error while running the project, check the options bellow. 
+- If you meet any error while running the project, check the options bellow.
 And if you are using Windows, it is recommended to run the project using powershell or cmd.
 - Node verion: v22 or later
 - OS: Mac, Windows, Linux
@@ -23,8 +23,17 @@ And if you are using Windows, it is recommended to run the project using powersh
 
 To get started with the project, clone the repository and install the necessary dependencies:
 
+# Init DB
+```bash
+docker run --name mongodb -d -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=password mongo:latest
+
+
+
 ```bash
 git clone https://github.com/Betting-Devs/BettingSite-MultiChain.git
 cd BettingSite-MultiChain
+cp .env.example .env
 npm install
 npm start
+
+
